@@ -1,0 +1,59 @@
+﻿@model Oct7.Models.Bookmodel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bookmodel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BookId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bookname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bookname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ctegory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ctegory)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "EditDetails", new { id = Model.BookId }) |
+    @Html.ActionLink("Delete", "Delete", new { id = Model.BookId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

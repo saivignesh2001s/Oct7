@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Find";
+}
+
+<h2>Find</h2>
+@using (@Html.BeginForm())
+            {
+                @Html.TextBox("Search")
+                <input type="submit" name="Find"  value="submit"/>
+            }
+
